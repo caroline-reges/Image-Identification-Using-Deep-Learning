@@ -2,7 +2,13 @@
 
 ## Project Topic
 
-I wanted to use this 
+This is the dataset I am using for my deep learning project: 
+
+https://www.kaggle.com/datasets/alessiocorrado99/animals10/data
+
+I like this dataset because it has simple categories, and a large number of images. The categories are:
+
+
 
 Project topic: (5 pts)
 Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
