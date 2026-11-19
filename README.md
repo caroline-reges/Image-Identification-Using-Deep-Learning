@@ -12,6 +12,11 @@ For this project, I will test a Convolutional Neural Network (CNN), and adjust t
 
 ## Data cleaning and EDA, Data Preprocessing 
 
+The first issue I noticed is that my folder names are all in Italian. So I needed to rename each folder with the corresponding English name. 
+
+I wanted to check my class distribution, to see if my dataset is imbalanced. 
+
+I wanted to check the dimensions of my images, to see how much they vary, because they were collected from google images. 
 
 Project topic: (5 pts)
 Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
