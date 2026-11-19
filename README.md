@@ -8,7 +8,7 @@ https://www.kaggle.com/datasets/alessiocorrado99/animals10/data
 
 I like this dataset because it has simple categories, and a large number of images (28,000). The categories are: dog, horse, elephant, butterfly, chicken, cat, cow, spider, sheep, and squirrel. This is a set of images that someone used for their matriculation thesis, and it has been downloaded from Kaggle over 100,000 times, so I believe it is a good test dataset to use. These are all images that have been collected from Google Images.
 
-For this project, I will test a Convolutional Neural Network (CNN), and adjust the hyperparameters to see how it affects my model's performance. I wanted to keep this project simple, so my main goal is to get the best-wroking model I can. 
+For this project, I will test a Convolutional Neural Network (CNN), and adjust the hyperparameters to see how it affects my model's performance. I wanted to keep this project simple, so my main goal is to get the best-working model I can. 
 
 ## Data cleaning and EDA, Data Preprocessing 
 
