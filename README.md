@@ -14,14 +14,13 @@ For this project, I will test a Convolutional Neural Network (CNN), and adjust t
 
 The first issue I noticed is that my folder names are all in Italian. So I needed to rename each folder with the corresponding English name. 
 
-I wanted to check my class distribution, to see if my dataset is imbalanced. I can see that some groups, like dogs, have three times the amount of images as other groups, like elephants. But even in the elephant group, there are approximately 1500 images, so that should still be enough to make a working model. If I have issues later on with the groups with less images, I will come back to this. 
+To check my class distribution, to see if my dataset is imbalanced. I can see that some groups, like dogs, have three times the amount of images as other groups, like elephants. But even in the elephant group, there are approximately 1500 images, so that should still be enough to make a working model. If I have issues later on with the groups with less images, I will come back to this. 
 
 <img src="Images/image_distribution.png" width="500">
 
-I wanted to check the dimensions of my images, to see how much they vary, because they were collected from google images. Because my dog folder has the most images, I took the dimensions of all the images in that folder. I can see that there is a wide variety of image sizes I will either need to crop or resize my images. I will try both options when I start working with my model. 
+To check the dimensions of my images, to see how much they vary, because they were collected from google images. Because my dog folder has the most images, I took the dimensions of all the images in that folder. I can see that there is a wide variety of image sizes I will either need to crop or resize my images. I will try both options when I start working with my model. 
 
 <img src="Images/image_size_distribution.png" width="500">
-
 
 
 Project topic: (5 pts)
