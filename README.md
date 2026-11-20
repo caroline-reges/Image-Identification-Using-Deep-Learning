@@ -14,9 +14,13 @@ For this project, I will test a Convolutional Neural Network (CNN), and adjust t
 
 The first issue I noticed is that my folder names are all in Italian. So I needed to rename each folder with the corresponding English name. 
 
-I wanted to check my class distribution, to see if my dataset is imbalanced. 
+I wanted to check my class distribution, to see if my dataset is imbalanced. I can see that some groups, like dogs, have three times the amount of images as other groups, like elephants. But even in the elephant group, there are approximately 1500 images, so that should still be enough to make a working model. If I have issues later on with the groups with less images, I will come back to this. 
 
-I wanted to check the dimensions of my images, to see how much they vary, because they were collected from google images. 
+![Image Distribution](images/image_distribution.png)
+
+I wanted to check the dimensions of my images, to see how much they vary, because they were collected from google images. Because my dog folder has the most images, I took the dimensions of all the images in that folder.
+
+
 
 Project topic: (5 pts)
 Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
