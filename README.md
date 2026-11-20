@@ -22,6 +22,9 @@ To check the dimensions of my images, to see how much they vary, because they we
 
 <img src="Images/image_size_distribution.png" width="500">
 
+To get a quick overview of my images, I selected a random image from each folder. From this, I could see that there are a wide variety of images, some where the animal is in the center, some where the animal is more to the side. Some with a single animal, and some with multiple. Some have a watermark or frame, while others don't. My guess is that resizing my images will be better than cropping for this dataset, because there is so much variety, but I will try both and see. 
+
+<img src="Images/image_snippet.png" width="700">
 
 Project topic: (5 pts)
 Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
