@@ -26,6 +26,10 @@ To get a quick overview of my images, I selected a random image from each folder
 
 <img src="Images/image_snippet.png" width="700">
 
+Check for any corrupted or repeat images
+
+Check the image color formats (RGB, grayscale, RGBA, etc)
+
 Project topic: (5 pts)
 Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
 Does it state the motivation or the goal (or why it’s important) clearly?
