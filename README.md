@@ -26,33 +26,11 @@ To get a quick overview of my images, I selected a random image from each folder
 
 <img src="Images/image_snippet.png" width="700">
 
-Check for any corrupted or repeat images
+Next, I checked to see if there were any corrupt images using .verify() and did not see any corrupt images. This function will not detect all corrupt images as it doesn't actually open every image, but this is a quick way to initially check for corrupt images. 
 
-Check the image color formats (RGB, grayscale, RGBA, etc)
+Next, I collected all of the color formats that the images have, and counted how many images are of each type. It told me that I have 26,128 RGB images, 49 RGBA images, 1 CMYK image, and 1 L image. Because so many images are RGB, I decided to delete the images that are not RGB. 
 
-Project topic: (5 pts)
-Is there a clear explanation about what this project is about? Does it state clearly which type of problem (task)?
-Does it state the motivation or the goal (or why it’s important) clearly?
-Data: (5 pts)
-Is data source properly quoted and described? (including links, brief explanations)
-Do they explain the data description properly?
-Data cleaning and EDA, data preprocessing (10 pts)
-
-Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:
-
-Text data examples: Basic EDA such as word count, histogram etc and basic data cleaning such as stop words removal, Explaining word embedding methods: When you evaluate, the score is based on how they demonstrated understanding by explaining the concepts and giving reasonings why they chose the methods/techniques etc, but not based on just complexity of the model or technique or just performance alone.
-
-Image or sound data examples: Pixel value count or histogram, spectral analysis such as power spectrum or frequency analysis to make feature vectors, etc
-
-Does it include clear explanations on how and why an certain analysis (EDA) is performed?
-
-Does it have proper visualization?
-
-Does it have proper analysis? E.g. histogram, correlation matrix, heatmap, plots etc.
-
-Does it have conclusions or discussions? E.g. the EDA summary, findings, discussing foreseen difficulties and/or analysis strategy.
-
-Model building / Model choice (15 pts)
+## Model building / Model choice 
 How many models have been used and compared? Any reasonings for model choice?
 
 Model training (15 pts)
