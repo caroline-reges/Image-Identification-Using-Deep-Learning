@@ -31,6 +31,13 @@ Next, I checked to see if there were any corrupt images using .verify() and did 
 Next, I collected all of the color formats that the images have, and counted how many images are of each type. It told me that I have 26,128 RGB images, 49 RGBA images, 1 CMYK image, and 1 L image. Because so many images are RGB, I decided to delete the images that are not RGB. 
 
 ## Model building / Model choice 
+
+For this project, I wanted to start with a simple CNN 
+
+https://www.geeksforgeeks.org/machine-learning/image-classifier-using-cnn/
+
+
+
 How many models have been used and compared? Any reasonings for model choice?
 
 Model training (15 pts)
