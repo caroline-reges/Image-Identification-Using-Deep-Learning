@@ -32,7 +32,9 @@ Next, I collected all of the color formats that the images have, and counted how
 
 ## Model building / Model choice 
 
-For this project, I wanted to start with a simple CNN 
+For this project, I wanted to start with a simple CNN. I decided to resize all of my images in this project to 128x128 (by stretching or squashing the image) to make sure they were the same size. I may go back and adjust this later.
+
+
 
 https://www.geeksforgeeks.org/machine-learning/image-classifier-using-cnn/
 
