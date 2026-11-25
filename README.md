@@ -41,17 +41,19 @@ The category names were one hot encoded, to change their names from words to num
 
 ## Model building / Model choice 
 
-For this project, I wanted to start with a simple CNN to get a baseline model to work with. 
+For this project, I wanted to start with a simple CNN to get a baseline model to work with. I wanted to use a more generic model, so I followed this tutorial: https://www.geeksforgeeks.org/machine-learning/image-classifier-using-cnn/
+
+<img src="Images/Simple_CNN_Initial_Summary.png" width="500">
+
+<img src="Images/Simple_CNN_Initial_Accuracy.png" width="500">
+
+REMAKE THE ACCURACY PLOT WITH X-AXIS and Y-AXIS labels!!!!!!!!!!
+
+From looking at the initial summary, and the initial accuracy, the first major problem I can see is overfitting. While the training data builds a more accurate model as the number of epochs increases, that doesn't help increase the test data accuracy to much more than 60%. I can further see this because one layer contains over 4 million parameters, which was created because the layer before, the flatten layer, turns the feature map into a vector of 65,000 parameters. 
+
+## Model training 
 
 
-
-https://www.geeksforgeeks.org/machine-learning/image-classifier-using-cnn/
-
-
-
-How many models have been used and compared? Any reasonings for model choice?
-
-Model training (15 pts)
 Show model training procedure including hyper parameter tuning. Show any procedure for measuring train and/or test performances. Visualization of tracking overfitting.
 
 Results and Analysis: (15 pts)
