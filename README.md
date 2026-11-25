@@ -30,9 +30,15 @@ Next, I checked to see if there were any corrupt images using .verify() and did 
 
 Next, I collected all of the color formats that the images have, and counted how many images are of each type. It told me that I have 26,128 RGB images, 49 RGBA images, 1 CMYK image, and 1 L image. Because so many images are RGB, I decided to delete the images that are not RGB. 
 
+All images were resized to 128 x 128 by stretching or squashing the images, not by cropping. The original files have not been edited so I can go back and change this later if needed
+
+The images were divided into test and training sets, with 20% of the images used for training, and 80% of the images used for testing. I stratified the data so there was an even amount of images in the test and training sets for each image category. 
+
 ## Model building / Model choice 
 
-For this project, I wanted to start with a simple CNN. I decided to resize all of my images in this project to 128x128 (by stretching or squashing the image) to make sure they were the same size. I may go back and adjust this later.
+
+
+For this project, I wanted to start with a simple CNN.
 
 
 
