@@ -30,15 +30,18 @@ Next, I checked to see if there were any corrupt images using .verify() and did 
 
 Next, I collected all of the color formats that the images have, and counted how many images are of each type. It told me that I have 26,128 RGB images, 49 RGBA images, 1 CMYK image, and 1 L image. Because so many images are RGB, I decided to delete the images that are not RGB. 
 
-All images were resized to 128 x 128 by stretching or squashing the images, not by cropping. The original files have not been edited so I can go back and change this later if needed
+All images were resized to 128 x 128 by stretching or squashing the images, not by cropping. The original files have not been edited so I can go back and change this later if needed. I resized the images to make the input dimensions consistent, and make the training faster, as most of the images will contain fewer pixels than they did before. 
+
+All images were changed from their 0-255 RGB scale to a 0-1 scale to help the model work faster and more efficiently. 
 
 The images were divided into test and training sets, with 20% of the images used for training, and 80% of the images used for testing. I stratified the data so there was an even amount of images in the test and training sets for each image category. 
 
+The category names were one hot encoded, to change their names from words to numeric, because the model needs a numeric way to represent each category. 
+
+
 ## Model building / Model choice 
 
-
-
-For this project, I wanted to start with a simple CNN.
+For this project, I wanted to start with a simple CNN to get a baseline model to work with. 
 
 
 
