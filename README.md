@@ -30,7 +30,7 @@ Next, I checked to see if there were any corrupt images using .verify() and did 
 
 Next, I collected all of the color formats that the images have, and counted how many images are of each type. It told me that I have 26,128 RGB images, 49 RGBA images, 1 CMYK image, and 1 L image. Because so many images are RGB, I decided to delete the images that are not RGB. 
 
-All images were resized to 128 x 128 by stretching or squashing the images, not by cropping. The original files have not been edited so I can go back and change this later if needed. I resized the images to make the input dimensions consistent, and make the training faster, as most of the images will contain fewer pixels than they did before. 
+All images were resized to 128 x 128 by stretching or squashing the images, not by cropping. The original files have not been edited so I can go back and change this later if needed. I resized the images to make the input dimensions consistent, and make the training faster, as most of the images will contain fewer pixels than they did before. I also kept the original image proportions.
 
 All images were changed from their 0-255 RGB scale to a 0-1 scale to help the model work faster and more efficiently. 
 
@@ -47,8 +47,6 @@ For this project, I wanted to start with a simple CNN to get a baseline model to
 
 <img src="Images/Simple_CNN_Initial_Accuracy.png" width="500">
 
-REMAKE THE ACCURACY PLOT WITH X-AXIS and Y-AXIS labels!!!!!!!!!!
-
 From looking at the initial summary, and the initial accuracy, the first major problem I can see is overfitting. While the training data builds a more accurate model as the number of epochs increases, that doesn't help increase the test data accuracy to much more than 60%. I can further see this because one layer contains over 4 million parameters, which was created because the layer before, the flatten layer, turns the feature map into a vector of 65,000 parameters. 
 
 ## Simple CNN Hyperparameter Tuning
@@ -57,8 +55,11 @@ The first issue I wanted to fix is that flatten was creating too many parameters
 
 <img src="Images/Simple_CNN_test_2.png" width="500">
 
+Next, I wanted to try increasing the number of epochs. The previous run looked like the accuracy was still increasing after 15 epochs, so I wanted to run the training again with more epochs to see how much that could improve the model. All it did was increase training but not test accuracy, so I decided to keep the number of epochs at 15. 
 
+<img src="Images/Simple_CNN_test_3.png" width="500">
 
+To help with the varieity of images, I added an image augmentation step to my model, to account for the variety of images that are used. 
 
 
 
