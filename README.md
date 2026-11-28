@@ -39,7 +39,7 @@ The images were divided into test and training sets, with 20% of the images used
 The category names were one hot encoded, to change their names from words to numeric, because the model needs a numeric way to represent each category. 
 
 
-## Model building / Model choice 
+## First Model - Simple CNN
 
 For this project, I wanted to start with a simple CNN to get a baseline model to work with. I wanted to use a more generic model, so I followed this tutorial: https://www.geeksforgeeks.org/machine-learning/image-classifier-using-cnn/
 
@@ -51,7 +51,9 @@ REMAKE THE ACCURACY PLOT WITH X-AXIS and Y-AXIS labels!!!!!!!!!!
 
 From looking at the initial summary, and the initial accuracy, the first major problem I can see is overfitting. While the training data builds a more accurate model as the number of epochs increases, that doesn't help increase the test data accuracy to much more than 60%. I can further see this because one layer contains over 4 million parameters, which was created because the layer before, the flatten layer, turns the feature map into a vector of 65,000 parameters. 
 
-## Model training 
+## Simple CNN Hyperparameter Tuning
+
+The first issue I wanted to fix is that flatten was creating too many parameters in my model. So I replaced the flatten step with GlobalMaxPooling2D. 
 
 
 Show model training procedure including hyper parameter tuning. Show any procedure for measuring train and/or test performances. Visualization of tracking overfitting.
