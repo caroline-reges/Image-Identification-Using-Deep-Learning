@@ -53,7 +53,15 @@ From looking at the initial summary, and the initial accuracy, the first major p
 
 ## Simple CNN Hyperparameter Tuning
 
-The first issue I wanted to fix is that flatten was creating too many parameters in my model. So I replaced the flatten step with GlobalMaxPooling2D. 
+The first issue I wanted to fix is that flatten was creating too many parameters in my model. So I replaced the flatten step with GlobalMaxPooling2D. This decreased the number of parameters at that step from 4 million to 4 thousand. This also made the test and training accuracy much closer to each other, but the overall accuracy decreased. 
+
+<img src="Images/Simple_CNN_test_2.png" width="500">
+
+
+
+
+
+
 
 
 Show model training procedure including hyper parameter tuning. Show any procedure for measuring train and/or test performances. Visualization of tracking overfitting.
